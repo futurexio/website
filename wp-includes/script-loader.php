@@ -1,6 +1,6 @@
 <?php
 /**
- * WordPress scripts and styles default loader.
+
  *
  * Most of the functionality that existed here was moved to
  * {@link http://backpress.automattic.com/ BackPress}. WordPress themes and
@@ -146,6 +146,7 @@ function wp_default_scripts( &$scripts ) {
 	$scripts->add( 'wp-lists', "/wp-includes/js/wp-lists$suffix.js", array( 'wp-ajax-response', 'jquery-color' ), false, 1 );
 
 	// WordPress no longer uses or bundles Prototype or script.aculo.us. These are now pulled from an external source.
+	//googleapis.com was replaced by useso.com
 	$scripts->add( 'prototype', '//ajax.useso.com/ajax/libs/prototype/1.7.1.0/prototype.js', array(), '1.7.1');
 	$scripts->add( 'scriptaculous-root', '//ajax.useso.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js', array('prototype'), '1.9.0');
 	$scripts->add( 'scriptaculous-builder', '//ajax.useso.com/ajax/libs/scriptaculous/1.9.0/builder.js', array('scriptaculous-root'), '1.9.0');
