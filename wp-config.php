@@ -15,6 +15,8 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
+//迁移到服务器后，记得更改wp-config.php里边关于数据库的名称以及数据库帐号密码
+//并且要修改数据库表fx_options里边的siteurl和home两项参数
 /** The name of the database for WordPress */
 define('DB_NAME', 'futurexio');
 
